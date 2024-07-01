@@ -28,10 +28,10 @@
                 <div class="form-group">
                 <label for="kategori_barang">Kategori Barang</label>
                 <select name="kategori_barang" id="kategori_barang" class="form-control">
-                    <option value="1" <?= isset($row) && $row->kategori_barang == 1 ? 'selected' : '' ?>>Laptop/PC</option>
-                    <option value="2" <?= isset($row) && $row->kategori_barang == 2 ? 'selected' : '' ?>>Elektronik</option>
-                    <option value="3" <?= isset($row) && $row->kategori_barang == 3 ? 'selected' : '' ?>>Modem</option>
-                    <option value="4" <?= isset($row) && $row->kategori_barang == 4 ? 'selected' : '' ?>>Istri</option>
+                    <option value="Laptop/PC" <?= isset($row) && $row->kategori_barang == 1 ? 'selected' : '' ?>>Laptop/PC</option>
+                    <option value="Elektronik" <?= isset($row) && $row->kategori_barang == 2 ? 'selected' : '' ?>>Elektronik</option>
+                    <option value="Modem" <?= isset($row) && $row->kategori_barang == 3 ? 'selected' : '' ?>>Modem</option>
+                    <option value="Istri" <?= isset($row) && $row->kategori_barang == 4 ? 'selected' : '' ?>>Istri</option>
                 </select>
             </div> 
                 <div class="form-group">
