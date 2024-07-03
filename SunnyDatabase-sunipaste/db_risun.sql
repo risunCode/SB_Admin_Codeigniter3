@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 01, 2024 at 05:02 AM
+-- Generation Time: Jul 03, 2024 at 10:40 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
 
@@ -61,19 +61,17 @@ CREATE TABLE IF NOT EXISTS `itemdetails` (
   `alamat` varchar(255) NOT NULL,
   `alamat2` varchar(255) NOT NULL,
   `deskripsi_produk` varchar(255) NOT NULL,
+  `jenis_produk` varchar(255) NOT NULL,
   KEY `gambar_produk` (`id_barang`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `itemdetails`
 --
 
-INSERT INTO `itemdetails` (`id_barang`, `gambar_produk`, `kategori_barang`, `nama_barang`, `harga`, `merek`, `sisa_stok`, `alamat`, `alamat2`, `deskripsi_produk`) VALUES
-(4, 'http://localhost/sunipaste/assets/uploads/4+Istri.jpg', 'Istri', 'LovelyPurin', 'Rp.999.999.999', 'Pribadi', 1, '', '', ''),
-(5, 'http://localhost/sunipaste/assets/uploads/5+Istri Kedua.jpg', 'Istri Kedua', 'Istri', '1', 'Pribadi', 1, '', '', ''),
-(8, 'http://localhost/sunipaste/assets/uploads/+2.jpg', '2', 'DEEPCOOL PSU 1100W 80+GOLD', 'Rp.1.780.000', 'DeepCool', 1, '', '', ''),
-(9, 'http://localhost/sunipaste/assets/uploads/+1.jpg', '1', '1', '1', '1', 1, '', '', ''),
-(10, 'http://localhost/sunipaste/assets/uploads/10+1.jpg', '1', '2', '2', '2', 2, '', '', '');
+INSERT INTO `itemdetails` (`id_barang`, `gambar_produk`, `kategori_barang`, `nama_barang`, `harga`, `merek`, `sisa_stok`, `alamat`, `alamat2`, `deskripsi_produk`, `jenis_produk`) VALUES
+(22, 'http://localhost/sunipaste/assets/uploads/_6682746a539b4.jpg', 'Elektronik', 'DEEPCOOL PSU 1100W 80+GOLD', 'Rp.10.300.000', 'DeepCool', 1, '', '', 'Power Supply sobat PLN ', 'Elektronik'),
+(23, 'http://localhost/sunipaste/assets/uploads/23.jpg', 'Laptop/PC', 'POWER SUPPLY', 'Rp.1.700.000', 'DEEPCOOL', 1, '', '', 'Power Supply sobat pln', 'Laptop/PC Gaming');
 
 -- --------------------------------------------------------
 
@@ -104,7 +102,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `level` char(2) NOT NULL,
   `created_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id_user`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `users`
